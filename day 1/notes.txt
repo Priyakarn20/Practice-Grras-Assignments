@@ -1,0 +1,99 @@
+ Git Commands 
+
+1. git config : It is used to set the name of the author and email address which we want our commitment ton addressing .
+ git config -global user.name "user name " ... git config user.name "Ravi21"
+ git config -global user.email "email address" ... git config user.email "Ravi21@gmail.com"
+
+2. git init : It is used to start a new git repository . It is generally used at the beginning .
+  git init [repo name] ...  git init C:\Users\Ravi21\Anewproject
+
+3. git clone : It is used to clone and copy a repository from a URL.
+git clone [URL] ... git clone https://github.com/Priyakarn20/Practice-Grras-Assignments.git
+
+4. git add: it is used to add a file to the staging area . Instead of choosing a single file name , we can also choose to give all filenames "*" or git add . (to select all the files and it to the staging area ).
+git add (filename) .... git add project-1
+git add *
+
+5. git commit -m : It is used to record a file in its version history permanently . we give a message text at the end of the commit command. It helps in identifying the details about the commit code .
+git commit -m [type in a message] .... git commit -m "first commit"
+
+6. git commit -a: It is used to commit changes directly, skipping the staging environment.
+
+7. git status --short : It is used to see the changes in more compact way . we see the file we expected is modified .
+ short status flags are 
+ ?? - untracked files
+ A- files added to change 
+ M- modified files
+ D- Deleted file
+  eg. git status --short
+  res.  M index.html
+     To commit it directly we use git commit -a -m "Updated index.html with a new line"
+ 
+8. git log : It is used to view the history of commits for a repo .
+
+9. git diff : It is used to display all the differences between the files until the changes have not yet been staged .
+
+10. git diff -staged : It is used to display all the differences between staging area files and the latest version which might be present .
+
+11. git checkout -b <branch name> or Git branch [branch-name] : It is used to create a new branch .
+eg. git checkout -b "priya-1" or git branch priya-1
+
+12. git checkout <branch name> : It is used to go to a particular branch .
+
+13. Git branch –d [branch name]: It is used to delete the current branch name.
+eg. git branch -d priya-1
+
+14. git diff [first branch] [second branch]: It is used to display the differences present between the two branches.
+eg. git diff branch1 branch2
+
+15.git reset [file]: It is used to unstage a file .
+eg. git reset style.css
+
+16. git rm [file]: It is used to remove the files from the present working directory and is also used to stage the deletion process.
+eg. git rm style.css 
+
+17. git status : It is used to list down all the files which are ready to be commited.
+
+18. git reset [commit]: It is used to undo all the changes that have been made as a part of commit after a specified commit has taken place .
+eg . git reset 0055cf64864165fuhll56664hyu
+
+19. Git reset –hard [commit]: This command is used to discard all the history and takes us to the last specified commit.
+eg.  Git reset –hard 0055cf64864165fuhll56664hyu
+
+20. git log –follow: This is similar to that of git log with the additional difference that it lists the version history for a particular file, which often includes the renaming of the file also.
+eg. git log --follow project_1
+
+21. git show [commit]: This is used to display the metadata and all the content related changes of a particular commit.
+eg. git show 0055cf64864165fuhll56664hyu
+
+22. git tag: This is used to give particular tags to the code commits.
+eg. git tag 0055cf64864165fuhll56664hyu
+
+Commands of command prompt 
+
+1. ipconfig : It shows all the information about system .
+
+2. ipconfig/flushdns : It will clear the cache of old DNS server .
+
+3. cipher : It is used for deleting files permanently from a drive .
+
+4. ping : It is used to troubleshoot the internet connection issues .
+
+5. ASSOC : By using this, we can get details of each file type , their extensions and program associations . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
