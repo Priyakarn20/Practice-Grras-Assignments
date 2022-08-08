@@ -1,4 +1,4 @@
- Git Commands 
+ Git Commands .....
 
 1. git config : It is used to set the name of the author and email address which we want our commitment ton addressing .
  git config -global user.name "user name " ... git config user.name "Ravi21"
