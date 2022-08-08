@@ -81,6 +81,17 @@ Commands of command prompt
 
 5. ASSOC : By using this, we can get details of each file type , their extensions and program associations . 
 
+6. ls : list files and folders present .
+
+7. cd : change directory .(only for folders)
+
+8. cd .. : go to the parent or previous directory .
+
+9.cls or clear : clear terminal 
+
+10. mkdir : make directory 
+
+
 
 
 
