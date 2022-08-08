@@ -72,7 +72,7 @@ const chat = {
 //instead of doing this , we can update its value by this method
 chat. message = "say hello instead"; // say hello instead
    
-
+//calculator
 function calculator(val1, val2, sign){
     if (sign==='+'){
         console.log(val1 + val2);
@@ -91,6 +91,8 @@ calculator(55, 45, '+'); //100
 calculator(55, 45, '-');//10
 calculator(55, 45, '*');//2475
 calculator(55, 45, '/');//1,2222222223
+
+
 
 
 
