@@ -43,7 +43,7 @@ if ( times < 4){
 
 let fruit = " Mango"
 colour = "red"
-if(colour = orange){
+if(colour = "orange"){
     let juicyfruit = " orange"
 }
 console.log (fruit); //orange is not defined 
@@ -53,7 +53,7 @@ let drinks = " Wine";
 drinks = "Vodka";
 console.log(drinks); //vodka
 
-let vegetables = "Pumpkin";
+//let vegetables = "Pumpkin";
 let vegetables = "Potato";
 console.log(vegetables); // vegetables has already been declared
 
@@ -63,8 +63,8 @@ const product = "lakme";
 product = "ponds";
 console.log(product); //assignment to constant variable
 
-const cereals = "wheat";
-const cereals = "maize";
+//const cereals = "wheat";
+//const cereals = "maize";
 console.log(cereals);//cereals has already been declared
 
 const chat = {
