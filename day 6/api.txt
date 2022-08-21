@@ -1,0 +1,15 @@
+API(Application Programming Interface) - a software that enable two applications to interact with each other ,
+ A middle man between two application or system .
+ It makes transfer of data between the two easy .
+ eg. zomato delievery person is API between zomato and client , because of him ..they interact with each other .
+
+methods of HTTP : 
+Get : This get request method is used to fetch data from the server .
+eg. when I search for biryani on zomato, It shows all the list related to it .
+Post: This method request the web server to simply add our data to server .
+Payload- In simple terms , Details we sent to our server like our name, money, address, email etc.
+Put: This method request is used to edit or modify our data and it simply update our complete data .
+Patch: This method request is used to modify data specifically without updating the entire data .
+eg. if we want to modify our pay load by simply adding tip ..It'll modify only that particuar set of instructions .
+Delete: This method request is used to delete particular set of instructions .
+eg. I ordered Biryani and now I don't want to go for it..I simply use this method request .
