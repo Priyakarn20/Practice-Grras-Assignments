@@ -65,7 +65,7 @@ function f2(){
 f2();
 f1();  js functions are executed in the sequence 
 they are called , not in the sequence they are defined
-
+*/
 
 function happiness(){
     console.log('Happiness is a habit');
@@ -80,4 +80,4 @@ function clock(){
     time.getMinutes() + ":" + 
     time.getSeconds());
 }
-*/
+console.log('be happy');
