@@ -17,8 +17,8 @@ console.log(girl.name);
 console.log(girl.age);
 console.log(girl.address);
 console.log(girl['complexion']);*/
-
-const boy = {
+console.log(girl.smart);
+/*const boy = {
     "id": 1,
     "name": "Leanne Graham",
     "username": "Bret",
@@ -59,3 +59,4 @@ Object.keys(boy).forEach((key) => {
         for(i=0; i<Object.keys(boy).length; i++){
             console.log(Object.values);
         }
+        //.
