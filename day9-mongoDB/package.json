@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "init": "^0.1.2",
+    "mongoose": "^6.5.3"
+  },
+  "name": "day9-mongodb",
+  "version": "1.0.0",
+  "description": "No sql database",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priya",
+  "license": "ISC"
+}
