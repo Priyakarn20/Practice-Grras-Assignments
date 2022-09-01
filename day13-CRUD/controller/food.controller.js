@@ -1,7 +1,6 @@
 
 const FoodsModel = require('../model/food.model');
 
-//exporting and creating function at the same time 
 
  async function createFoods(req, res) {
     if (!req.body.food_name && !req.body.ingredients) {
@@ -26,7 +25,7 @@ const FoodsModel = require('../model/food.model');
 async function readFoods(req, res) {
     const foodsMenu = await FoodsModel.find({});
     try {
-        res.send( foodsMenu );
+        res.send({ data: foodsMenu} );
     } catch (error) {
         res.send({ message: error.message });
     };
