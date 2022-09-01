@@ -22,7 +22,7 @@ const sportsModel = require("../model/sports.model");
 
 
 async function readSports(req, res){
-    const sportsList = await SportsModel.find({});
+    const sportsList = await sportsModel.find({});
     try {
         res.send({data: sportsList});
     } catch (error) {
