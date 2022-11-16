@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const PORT = 8000;
-const MONGO_DB_URL = 'mongodb+srv://user:user@cluster0.bpn3qta.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_DB_URL = 'mongodb+srv://user:<password>@cluster0.bpn3qta.mongodb.net/?retryWrites=true&w=majority';
 /*mongoose.connect(MONGO_DB_URL, {useNewUrlParser: true, useUnifiedTopology: true}, console.log('OK'));
 
 mongoose.connect(MONGO_DB_URL, console.log('DATABASE CONNECTED'));
