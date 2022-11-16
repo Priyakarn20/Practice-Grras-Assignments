@@ -23,7 +23,7 @@ if ( times < 4) {
     var greeter  = " say hi instead"
 }
 console.log(greeter); //Namaste
-//problem with var variables that we can declare it again and again and redefine it . It is good if we knowinglywant a variable to be redefined but it is a problem if we do not realise about it has been already declared .
+//problem with var variables that we can declare it again and again and redefine it . It is good if we knowingly want a variable to be redefined but it is a problem if we do not realise about it has been already declared .
 
 //Let .. let variables are block scoped .
 
@@ -33,6 +33,7 @@ if ( times < 4){
     let eatable = " chole kulche"
     console.log(food); // Rajma Chawal
 };
+
 let bhojan = "Rajma Chawal"
  times = 3 ;
 if ( times < 4){

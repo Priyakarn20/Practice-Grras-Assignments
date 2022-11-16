@@ -7,7 +7,8 @@ const PORT = 8000;
 // connecting db
 DB();
 //allowing json objects
-app.use(express.urlencoded({ exteded: true });
+app.use(express.json());
+app.use(express.urlencoded({ exteded: true }));
 
 console.log(foodModel);
 
@@ -39,11 +40,17 @@ app.get("/food", async function (req, res) {
 //update route 
 app.put("/food/:id", async function (req, res) {
     console.log(req.params);
+    console.log(req.body);
     try {
         await foodModel.findByIdAndUpdate(req.params.id, req.body)
+        res.send({
+            data: req.body,
+        
+        })
     } catch (error) {
         res.send(error.message)
     }
+
 });
 
 //delete route

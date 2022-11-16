@@ -1,5 +1,6 @@
 import React from 'react';
-import Way from './components/router';
+import Way from './pages/router';
+//import Header from './components/header';
 import './App.css';
 
 function App() {

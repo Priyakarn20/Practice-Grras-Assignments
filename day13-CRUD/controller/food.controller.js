@@ -1,4 +1,3 @@
-
 const FoodsModel = require('../model/food.model');
 
 
@@ -31,4 +30,13 @@ async function readFoods(req, res) {
     };
 }
 
-module.exports = {createFoods , readFoods };
+async function updateFood(req, res) {
+    try {
+        await FoodsModel.findByIdAndUpdate(req.params, req.body);
+        res.send("Data Updated Successfully");
+    } catch (error) {
+        res.send({ message: error.message });
+    }
+}
+
+module.exports = {createFoods , readFoods , updateFood };

@@ -22,4 +22,13 @@ const StudentsModel = require("../model/students.model");
     }
 };
 
-module.exports = createStudent;
+async function readStudents(req, res){
+    const studentList = await StudentsModel.find({});
+    try {
+        res.send({data: studentList});
+    } catch (error) {
+res.send({message: error.message});
+    }
+}
+
+module.exports = { createStudent, readStudents };

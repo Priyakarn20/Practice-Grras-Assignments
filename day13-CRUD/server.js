@@ -14,6 +14,6 @@ app.use(express.json());
 
 app.use('/foods', FoodsRoute);
 app.use('/sports', SportsRoute);
-app.use('/Student', StudentsRoute);
+app.use('/student', StudentsRoute);
 
 app.listen(PORT, console.log('Server is running on port', PORT));

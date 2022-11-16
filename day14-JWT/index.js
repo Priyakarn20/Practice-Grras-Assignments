@@ -1,5 +1,4 @@
 
-const { application } = require('express');
 const express = require('express');
 const app = express();
 const PORT = 4000;
@@ -18,7 +17,7 @@ function generateJWTToken(username) {
     return jwt.sign({
         data: username,
     },
-        "secret",
+        secret,
         {
             expiresIn: 60 * 60
         }
@@ -33,11 +32,11 @@ function authenticateToken(req, res, next) {
     const token = authHeader.split(' ')[1];
     console.log()
     //checking token existence
-    if (authHeader == null) return res.send('No token found');
+    if (token == null) return res.send('No token found');
     // verifying token validity
-    const decodedToken = jwt.verify(token, secret, function (err, user) {
+     jwt.verify(token, secret, function (err, user) {
         if (err) return res.send({ Error: err }) 
-        console.log(user, req.body.user);
+       // console.log(user, req.body.user);
         req.body.user = user
     })
     next();
@@ -47,7 +46,7 @@ app.post('/token', (request, response) => {
     response.json(token);
 })
 
-app.post('/token', authenticateToken, (request, response) => {
+app.post('/verifytoken', authenticateToken, (request, response) => {
     //const token = generateJWTToken(request.body.name);
     // response.json(token);
     response.json('ok');
